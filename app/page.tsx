@@ -9,25 +9,15 @@ import {
   SiNodedotjs,
   SiExpress,
   SiNestjs,
-  SiFlutter,
-  SiOpenjdk,
-  SiSpringboot,
   SiMongodb,
   SiPostgresql,
   SiMysql,
-  SiDocker,
-  SiKubernetes,
-  SiDigitalocean,
-  SiLinux,
-  SiRaspberrypi,
-  SiPython,
-  SiDjango,
   SiGo,
   SiElectron,
-  SiSqlite,
-  SiFastify,
   SiGithub,
   SiLinkedin,
+  SiPython,
+  SiDocker,
 } from "react-icons/si";
 
 const techStack = [
@@ -67,12 +57,7 @@ const techStack = [
     color: "#000000",
     url: "https://expressjs.com",
   },
-  {
-    name: "Fastify",
-    icon: SiFastify,
-    color: "#000000",
-    url: "https://fastify.dev",
-  },
+
   {
     name: "NestJS",
     icon: SiNestjs,
@@ -80,40 +65,10 @@ const techStack = [
     url: "https://nestjs.com",
   },
   {
-    name: "Python",
-    icon: SiPython,
-    color: "#3776AB",
-    url: "https://python.org",
-  },
-  {
-    name: "Django",
-    icon: SiDjango,
-    color: "#092E20",
-    url: "https://djangoproject.com",
-  },
-  {
     name: "Go",
     icon: SiGo,
     color: "#00ADD8",
     url: "https://golang.org",
-  },
-  {
-    name: "Flutter",
-    icon: SiFlutter,
-    color: "#02569B",
-    url: "https://flutter.dev",
-  },
-  {
-    name: "Java",
-    icon: SiOpenjdk,
-    color: "#ED8B00",
-    url: "https://www.oracle.com/java",
-  },
-  {
-    name: "Spring Boot",
-    icon: SiSpringboot,
-    color: "#6DB33F",
-    url: "https://spring.io/projects/spring-boot",
   },
   {
     name: "Electron",
@@ -146,40 +101,16 @@ const techStack = [
     url: "https://mysql.com",
   },
   {
-    name: "SQLite",
-    icon: SiSqlite,
-    color: "#003B57",
-    url: "https://sqlite.org",
+    name: "Python",
+    icon: SiPython,
+    color: "#3776AB",
+    url: "https://python.org",
   },
   {
     name: "Docker",
     icon: SiDocker,
     color: "#2496ED",
     url: "https://docker.com",
-  },
-  {
-    name: "Kubernetes",
-    icon: SiKubernetes,
-    color: "#326CE5",
-    url: "https://kubernetes.io",
-  },
-  {
-    name: "DigitalOcean",
-    icon: SiDigitalocean,
-    color: "#0080FF",
-    url: "https://digitalocean.com",
-  },
-  {
-    name: "Linux",
-    icon: SiLinux,
-    color: "#FCC624",
-    url: "https://kernel.org",
-  },
-  {
-    name: "Raspberry Pi",
-    icon: SiRaspberrypi,
-    color: "#A22846",
-    url: "https://raspberrypi.org",
   },
 ];
 
@@ -205,30 +136,34 @@ export default function Home() {
             Ege Ayan
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-            Software Engineer | Full Stack Web Developer
+            Software Engineer | Full Stack Developer
           </h2>
         </header>
 
-        <div className="max-w-4xl text-lg md:text-xl text-gray-300 leading-relaxed space-y-4">
+        <div className="max-w-4xl text-lg md:text-xl text-gray-300 leading-relaxed space-y-8">
           <p className="hover:text-white transition-colors duration-300">
-            I build stuff. Web apps, mobile apps, backend systems - whatever
-            needs to get done.
+            I build things—web apps, mobile apps, desktop software, backend
+            systems—whatever needs to get done. I&apos;ve gained valuable
+            experience across many areas of software development by following
+            the philosophy of{" "}
+            <span className="font-bold">fucking around and finding out</span>.
           </p>
 
           <p className="hover:text-white transition-colors duration-300">
-            I&apos;m currently working on some cool, I mean really cool,
-            projects and picking up new tech along the way. If you&apos;ve got
-            something interesting and want to work with someone who gets shit
-            done, let&apos;s talk.
+            Have an idea that could change the game? If you want to work with
+            someone who actually gets shit done, hit me up.
           </p>
         </div>
       </section>
 
       {/* Tech Stack Section */}
       <section className="mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-white">
           Stuff I Work With:
         </h2>
+        <p className="text-gray-400 text-center mb-8">
+          Never focus on the tool, focus on the solution...
+        </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {techStack.map((tech) => {
             const IconComponent = tech.icon;
@@ -279,7 +214,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-white">
                   Bilkent University
                 </h3>
-                <p className="text-gray-400">Computer Engineering</p>
+                <p className="text-gray-400">B.Sc. in Computer Engineering</p>
               </div>
               <span className="text-gray-500 text-sm mt-2 md:mt-0">
                 2020 - 2024
@@ -314,12 +249,16 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
           &ldquo;Can you list 3 interesting facts about yourself?&rdquo;
         </h2>
+        <p className="text-gray-400 text-center mb-8">
+          One of those dumb questions people throw at you during public
+          gatherings... But hey, since this is my public profile, here we go:
+        </p>
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">1)</span>
               <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m a 3rd degree black belt taekwondo fighter.
+                I&apos;m a 3rd degree black belt taekwondo athlete.
               </p>
             </div>
           </div>
@@ -337,7 +276,7 @@ export default function Home() {
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">3)</span>
               <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I absolutely hate that question! But here we are anyway...
+                I fucking hate that question!
               </p>
             </div>
           </div>
@@ -353,6 +292,7 @@ export default function Home() {
           Got a project? Want to work together? Or just want to talk tech?
           <br />
           <span className="text-gray-400">Hit me up.</span>
+          <br />
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
