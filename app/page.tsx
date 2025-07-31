@@ -143,9 +143,9 @@ export default function Home() {
         <div className="max-w-4xl text-lg md:text-xl text-gray-300 leading-relaxed space-y-8">
           <p className="hover:text-white transition-colors duration-300">
             I build things—web apps, mobile apps, desktop software, backend
-            systems—whatever needs to get done. I&apos;ve gained valuable
-            experience across many areas of software development by following
-            the philosophy of{" "}
+            systems—whatever needs to get done. I&apos;ve gained experience
+            across many areas of software development by following the
+            philosophy of{" "}
             <span className="font-bold">fuck around and find out</span>.
           </p>
 
@@ -258,12 +258,9 @@ export default function Home() {
       {/* Fun Facts Section */}
       <section className="mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-          &ldquo;Can you list 3 interesting facts about yourself?&rdquo;
+          Some Fax
         </h2>
-        <p className="text-gray-400 text-center mb-8">
-          One of those dumb questions people throw at you during public
-          gatherings... But hey, since this is my public profile, here we go:
-        </p>
+
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
             <div className="flex items-start space-x-4">
@@ -278,7 +275,15 @@ export default function Home() {
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">2)</span>
               <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m into WW2 history.
+                I&apos;m into WW2 history. Almost 1000 hours of{" "}
+                <Link
+                  href="https://steamcommunity.com/profiles/76561198308942523"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                >
+                  HOI4.
+                </Link>
               </p>
             </div>
           </div>
@@ -304,6 +309,23 @@ export default function Home() {
                   className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
                 >
                   this shit.
+                </Link>
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
+            <div className="flex items-start space-x-4">
+              <span className="text-2xl font-bold text-gray-500">4)</span>
+              <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
+                I&apos;m quite fond of{" "}
+                <Link
+                  href="https://agilemanifesto.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                >
+                  Agile Manifesto.
                 </Link>
               </p>
             </div>
