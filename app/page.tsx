@@ -30,7 +30,7 @@ const techStack = [
   {
     name: "Next.js",
     icon: SiNextdotjs,
-    color: "#000000",
+    color: "#fff",
     url: "https://nextjs.org",
   },
   {
@@ -54,7 +54,7 @@ const techStack = [
   {
     name: "Express",
     icon: SiExpress,
-    color: "#000000",
+    color: "#fff",
     url: "https://expressjs.com",
   },
 
@@ -136,7 +136,7 @@ export default function Home() {
             Ege Ayan
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-            Software Engineer | Full Stack Developer
+            Software Engineer && Full Stack Developer
           </h2>
         </header>
 
@@ -146,7 +146,7 @@ export default function Home() {
             systems—whatever needs to get done. I&apos;ve gained valuable
             experience across many areas of software development by following
             the philosophy of{" "}
-            <span className="font-bold">fucking around and finding out</span>.
+            <span className="font-bold">fuck around and find out</span>.
           </p>
 
           <p className="hover:text-white transition-colors duration-300">
@@ -161,8 +161,19 @@ export default function Home() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-5 text-white">
           Stuff I Work With:
         </h2>
-        <p className="text-gray-400 text-center mb-8">
-          Never focus on the tool, focus on the solution...
+        <p className="text-gray-400 text-center mb-8 text-lg leading-relaxed">
+          <span className="italic">
+            Never focus on the tool, focus on the solution...
+          </span>{" "}
+          Also{" "}
+          <Link
+            href="https://justfuckingusereact.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-purple-500 hover:text-purple-400 transition-all duration-300 inline-block font-semibold"
+          >
+            just fucking use React!
+          </Link>
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {techStack.map((tech) => {
@@ -276,7 +287,24 @@ export default function Home() {
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">3)</span>
               <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I fucking hate that question!
+                I&apos;m highly motivated by{" "}
+                <Link
+                  href="https://www.youtube.com/watch?v=tKvEnZSoqas"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-500 hover:text-red-400 transition-colors duration-300"
+                >
+                  phonk music
+                </Link>{" "}
+                and{" "}
+                <Link
+                  href="https://www.nescafe.com/tr/sites/default/files/2025-01/blackroast-bump%20960.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                >
+                  this shit.
+                </Link>
               </p>
             </div>
           </div>
@@ -289,7 +317,7 @@ export default function Home() {
           Get In Touch
         </h2>
         <p className="text-gray-300 mb-8 text-lg">
-          Got a project? Want to work together? Or just want to talk tech?
+          Got a project? Want to be open-source crusader? Or just want to chill?
           <br />
           <span className="text-gray-400">Hit me up.</span>
           <br />
