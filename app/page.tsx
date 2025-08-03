@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import {
   SiReact,
   SiNextdotjs,
@@ -18,6 +19,7 @@ import {
   SiLinkedin,
   SiPython,
   SiDocker,
+  SiSteam,
 } from "react-icons/si";
 
 const techStack = [
@@ -136,7 +138,7 @@ export default function Home() {
             Ege Ayan
           </h1>
           <h2 className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-            Software Engineer && Full Stack Developer
+            Software Engineer | Full Stack Developer
           </h2>
         </header>
 
@@ -162,17 +164,18 @@ export default function Home() {
           Stuff I Work With:
         </h2>
         <p className="text-gray-400 text-center mb-8 text-lg leading-relaxed">
-          <span className="italic">
+          <span className="italic line-through">
             Never focus on the tool, focus on the solution...
-          </span>{" "}
-          Also{" "}
+          </span>
+          {"  "}
           <Link
             href="https://justfuckingusereact.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-purple-500 hover:text-purple-400 transition-all duration-300 inline-block font-semibold"
+            className="text-[#61DBFB] inline-flex items-center font-bold"
           >
-            just fucking use React!
+            Just fucking use React!
+            <FaExternalLinkAlt className="text-[#61DBFB] ml-1 text-sm" />
           </Link>
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -213,7 +216,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-white">INFINIA</h3>
                 <p className="text-gray-400">Software Engineer</p>
               </div>
-              <span className="text-gray-500 text-sm mt-2 md:mt-0">
+              <span className="text-gray-400 text-sm mt-2 md:mt-0">
                 2024 - Current
               </span>
             </div>
@@ -227,7 +230,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-400">B.Sc. in Computer Engineering</p>
               </div>
-              <span className="text-gray-500 text-sm mt-2 md:mt-0">
+              <span className="text-gray-400 text-sm mt-2 md:mt-0">
                 2020 - 2024
               </span>
             </div>
@@ -239,7 +242,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-white">Microsoft</h3>
                 <p className="text-gray-400">Web Development Intern</p>
               </div>
-              <span className="text-gray-500 text-sm mt-2 md:mt-0">2023</span>
+              <span className="text-gray-400 text-sm mt-2 md:mt-0">2023</span>
             </div>
           </div>
 
@@ -249,7 +252,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-white">Moralabs</h3>
                 <p className="text-gray-400">Android Development Intern</p>
               </div>
-              <span className="text-gray-500 text-sm mt-2 md:mt-0">2022</span>
+              <span className="text-gray-400 text-sm mt-2 md:mt-0">2022</span>
             </div>
           </div>
         </div>
@@ -258,7 +261,7 @@ export default function Home() {
       {/* Fun Facts Section */}
       <section className="mb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-          Some Fax
+          Some Fax About Me
         </h2>
 
         <div className="max-w-3xl mx-auto space-y-4">
@@ -266,7 +269,7 @@ export default function Home() {
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">1)</span>
               <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m a 3rd degree black belt taekwondo athlete.
+                Third degree black belt taekwondo fighter.
               </p>
             </div>
           </div>
@@ -274,16 +277,17 @@ export default function Home() {
           <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">2)</span>
-              <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m into WW2 history. Almost 1000 hours of{" "}
+              <p className="text-lg text-gray-300">
+                Almost 1000 hours of{" "}
                 <Link
                   href="https://steamcommunity.com/profiles/76561198308942523"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                  className="text-red-400 underline decoration-red-500/30 underline-offset-2 hover:text-red-300 hover:decoration-red-400 transition-all duration-300 font-medium"
                 >
-                  HOI4.
+                  Hearts of Iron IV
                 </Link>
+                .
               </p>
             </div>
           </div>
@@ -291,25 +295,26 @@ export default function Home() {
           <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">3)</span>
-              <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m highly motivated by{" "}
+              <p className="text-lg text-gray-300">
+                Fueled by{" "}
                 <Link
-                  href="https://www.youtube.com/watch?v=tKvEnZSoqas"
+                  href="https://youtu.be/tKvEnZSoqas?feature=shared&t=60"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-red-500 hover:text-red-400 transition-colors duration-300"
+                  className="text-red-400 underline decoration-red-500/30 underline-offset-2 hover:text-red-300 hover:decoration-red-400 transition-all duration-300 font-medium"
                 >
                   phonk music
                 </Link>{" "}
                 and{" "}
                 <Link
-                  href="https://www.nescafe.com/tr/sites/default/files/2025-01/blackroast-bump%20960.png"
+                  href="https://www.homegrounds.co/wp-content/uploads/2022/04/CI_Dead-Eye-Dripped-eye-01.jpeg"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                  className="text-purple-400 underline decoration-purple-500/30 underline-offset-2 hover:text-purple-300 hover:decoration-purple-400 transition-all duration-300 font-medium"
                 >
-                  this shit.
+                  this shit
                 </Link>
+                .
               </p>
             </div>
           </div>
@@ -317,16 +322,17 @@ export default function Home() {
           <div className="bg-gray-900 rounded-xl p-6 border border-gray-700 hover:border-gray-500 transition-colors duration-300">
             <div className="flex items-start space-x-4">
               <span className="text-2xl font-bold text-gray-500">4)</span>
-              <p className="text-lg text-gray-300 hover:text-white transition-colors duration-300">
-                I&apos;m quite fond of{" "}
+              <p className="text-lg text-gray-300">
+                Fond of{" "}
                 <Link
                   href="https://agilemanifesto.org/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-400 transition-colors duration-300"
+                  className="text-blue-400 underline decoration-blue-500/30 underline-offset-2 hover:text-blue-300 hover:decoration-blue-400 transition-all duration-300 font-medium"
                 >
-                  Agile Manifesto.
+                  Agile Manifesto
                 </Link>
+                .
               </p>
             </div>
           </div>
@@ -339,14 +345,14 @@ export default function Home() {
           Get In Touch
         </h2>
         <p className="text-gray-300 mb-8 text-lg">
-          Got a project? Want to be open-source crusader? Or just want to chill?
+          Got a project? Want to support open-source? Or just want to chill?
           <br />
           <span className="text-gray-400">Hit me up.</span>
           <br />
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <a
+          <Link
             href="https://github.com/ege-ayan"
             target="_blank"
             rel="noopener noreferrer"
@@ -354,9 +360,9 @@ export default function Home() {
           >
             <SiGithub className="text-xl" />
             <span className="font-medium">GitHub</span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="https://linkedin.com/in/ege-ayan"
             target="_blank"
             rel="noopener noreferrer"
@@ -364,15 +370,17 @@ export default function Home() {
           >
             <SiLinkedin className="text-xl" />
             <span className="font-medium">LinkedIn</span>
-          </a>
+          </Link>
 
-          <a
-            href="mailto:ayanege2001@gmail.com"
+          <Link
+            href="https://steamcommunity.com/profiles/76561198308942523"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center justify-center space-x-2 bg-gray-900 hover:bg-gray-800 px-6 py-3 rounded-lg transition-all duration-300 border border-gray-700 hover:border-gray-500"
           >
-            <span className="text-xl">📧</span>
-            <span className="font-medium">Email</span>
-          </a>
+            <SiSteam className="text-xl" />
+            <span className="font-medium">Steam</span>
+          </Link>
         </div>
       </section>
 
