@@ -130,6 +130,7 @@ export default function Home() {
             height={346}
             className="relative size-64 rounded-full object-cover select-none shadow-2xl transition-transform duration-300 group-hover:scale-105"
             priority
+            quality={100}
           />
         </div>
 
