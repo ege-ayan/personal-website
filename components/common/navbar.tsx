@@ -77,7 +77,9 @@ const MobileNavbar = ({
           isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <div className="px-4 pt-2 pb-3 space-y-1 bg-ovclh/95 backdrop-blur-md border-t border-white/10">
+        <div
+          className={`px-4 pt-2 pb-3 space-y-1 border-t border-white/25 bg-black`}
+        >
           {navItems.map((item, index) => {
             const Icon = item.icon;
             const isActive = pathname === item.href;
@@ -120,31 +122,15 @@ const MobileNavbar = ({
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const isMobile = useMobile();
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
 
   return (
-    <nav
-      className={`fixed border-b border-white/25 top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-ovclh/95 backdrop-blur-md shadow-lg border-b border-white/10"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="fixed bg-black top-0 left-0 right-0 z-50 border-b border-white/25">
       <div className="mx-auto px-4 sm:px-6 lg:px-12 2xl:px-20">
         <div className="flex items-center justify-between h-20">
           <Link
@@ -154,6 +140,7 @@ export default function Navbar() {
             EGE AYAN
           </Link>
 
+          {/* Conditional Navigation Rendering */}
           {isMobile ? (
             <MobileNavbar
               isOpen={isOpen}
