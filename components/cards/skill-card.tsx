@@ -19,7 +19,7 @@ export default function SkillCard({
       href={url}
       target="_blank"
       rel="noopener noreferrer nofollow"
-      className={` bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-white/10 ${color}`}
+      className={` bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 transition-all duration-300 hover:shadow-xl hover:shadow-white/10 ${color}`}
       aria-label={`Learn more about ${name}`}
     >
       <div className="flex flex-col items-center justify-center text-center space-y-4">
