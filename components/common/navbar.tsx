@@ -48,7 +48,7 @@ const MobileNavbar = ({
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
+        className="rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300"
         aria-expanded={isOpen}
         aria-controls="mobile-menu"
         aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -57,7 +57,7 @@ const MobileNavbar = ({
         <Hamburger
           toggled={isOpen}
           toggle={setIsOpen}
-          size={24}
+          size={28}
           color="#ffffff"
           direction="right"
           duration={0.4}
