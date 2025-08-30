@@ -135,7 +135,6 @@ export default function Navbar() {
             EGE AYAN
           </Link>
 
-          {/* Conditional Navigation Rendering */}
           {isMobile ? (
             <MobileNavbar
               isOpen={isOpen}
