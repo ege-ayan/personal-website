@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Divide as Hamburger } from "hamburger-react";
+import { Squash as Hamburger } from "hamburger-react";
 import { FiHome } from "react-icons/fi";
 import { useMobile } from "@/hooks/useMobile";
 
@@ -60,7 +60,7 @@ const MobileNavbar = ({
           size={24}
           color="#ffffff"
           direction="right"
-          duration={0.3}
+          duration={0.4}
           distance="lg"
           rounded
         />
@@ -68,7 +68,7 @@ const MobileNavbar = ({
 
       <div
         id="mobile-menu"
-        className={`absolute top-full left-0 right-0 transition-all duration-300 ease-in-out ${
+        className={`absolute top-full left-0 right-0 transition-all duration-400 ease-in-out ${
           isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
