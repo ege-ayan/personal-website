@@ -13,7 +13,7 @@ export default function Home() {
           height={346}
           priority
           quality={100}
-          className="size-60 select-none object-cover rounded-full shadow-lg"
+          className="size-60 contrast-120 select-none object-cover rounded-full shadow-lg"
         />
 
         <h1 className="text-3xl mt-5 font-bold">Ege Ayan</h1>
