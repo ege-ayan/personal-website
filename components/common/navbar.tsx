@@ -4,15 +4,10 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Divide as Hamburger } from "hamburger-react";
-import { FiHome, FiCode, FiBookOpen, FiArchive } from "react-icons/fi";
+import { FiHome } from "react-icons/fi";
 import { useMobile } from "@/hooks/useMobile";
 
-const navItems = [
-  { name: "Home", href: "/", icon: FiHome },
-  { name: "Projects", href: "/projects", icon: FiCode },
-  { name: "Blogs", href: "/blogs", icon: FiBookOpen },
-  { name: "Resources", href: "/resources", icon: FiArchive },
-];
+const navItems = [{ name: "Home", href: "/", icon: FiHome }];
 
 const DesktopNavbar = ({ pathname }: { pathname: string }) => {
   return (
