@@ -80,7 +80,7 @@ export default function ContactForm() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-          <div className="bg-white/5  backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-xl h-full">
+          <div className="bg-white/5  backdrop-blur-sm border border-white/10 rounded-2xl p-5 shadow-xl h-full">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Send a Message
             </h2>
@@ -210,7 +210,7 @@ export default function ContactForm() {
             </form>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-xl h-full">
+          <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 shadow-xl h-full">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Find Me Online
             </h2>
