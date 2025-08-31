@@ -23,4 +23,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://egeayan.dev/blogs/nextjs-breaking-changes</loc>
+    <lastmod>2025-08-31T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
