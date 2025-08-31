@@ -133,7 +133,7 @@ export default function Page() {
             alt="Tactical vs Strategic Programming: A visual representation of balancing quick development (tactical) with long-term architecture (strategic) in software development"
             width={1500}
             height={1000}
-            className="rounded-lg object-cover w-full h-auto"
+            className="rounded-lg select-none object-cover w-full h-auto"
             priority
             quality={100}
           />
