@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Squash as Hamburger } from "hamburger-react";
 import { FiHome } from "react-icons/fi";
-import { useMobile } from "@/hooks/useMobile";
 
 const navItems = [{ name: "Home", href: "/", icon: FiHome }];
 
@@ -117,7 +116,6 @@ const MobileNavbar = ({
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useMobile();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -135,15 +133,17 @@ export default function Navbar() {
             EGE AYAN
           </Link>
 
-          {isMobile ? (
+          <div className="hidden md:block">
+            <DesktopNavbar pathname={pathname} />
+          </div>
+
+          <div className="md:hidden">
             <MobileNavbar
               isOpen={isOpen}
               setIsOpen={setIsOpen}
               pathname={pathname}
             />
-          ) : (
-            <DesktopNavbar pathname={pathname} />
-          )}
+          </div>
         </div>
       </div>
     </nav>
