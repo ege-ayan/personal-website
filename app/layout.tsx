@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { Toaster } from "react-hot-toast";
 import Navbar from "@/components/common/navbar";
 import Footer from "@/components/common/footer";
 
@@ -123,7 +124,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.className}>
+    <html lang="en" suppressHydrationWarning className={inter.className}>
       <body
         className={`antialiased pt-20 px-5 sm:px-6 lg:px-12 2xl:px-20 bg-black text-white min-h-screen`}
       >
@@ -131,6 +132,36 @@ export default function RootLayout({
         {children}
         <Analytics />
         <Footer />
+        <Toaster
+          position="bottom-center"
+          toastOptions={{
+            duration: 5000,
+            style: {
+              background: "rgba(255, 255, 255, 0.05)",
+              backdropFilter: "blur(8px)",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+              color: "#ffffff",
+              fontSize: "14px",
+              fontWeight: "500",
+              borderRadius: "12px",
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+            },
+            success: {
+              style: {
+                background: "rgba(34, 197, 94, 0.1)",
+                border: "1px solid rgba(34, 197, 94, 0.2)",
+                color: "#22c55e",
+              },
+            },
+            error: {
+              style: {
+                background: "rgba(239, 68, 68, 0.1)",
+                border: "1px solid rgba(239, 68, 68, 0.2)",
+                color: "#ef4444",
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );

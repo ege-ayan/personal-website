@@ -395,7 +395,7 @@ class AuthService {
                   proof of concept to validate an idea or get user feedback
                 </li>
                 <li>
-                  <strong>Solution is temporary:</strong> The code will be&apos;
+                  <strong>Solution is temporary:</strong> The code will be
                   replaced soon or is part of a short-term initiative
                 </li>
                 <li>

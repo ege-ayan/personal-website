@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Squash as Hamburger } from "hamburger-react";
-import { FiBookOpen, FiHome } from "react-icons/fi";
+import { FiBookOpen, FiHome, FiMail } from "react-icons/fi";
 
 const navItems = [
   { name: "Home", href: "/", icon: FiHome },
   { name: "Blogs", href: "/blogs", icon: FiBookOpen },
+  { name: "Contact", href: "/contact", icon: FiMail },
 ];
 
 const DesktopNavbar = ({ pathname }: { pathname: string }) => {
