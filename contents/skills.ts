@@ -9,6 +9,7 @@ import {
   SiTypescript,
   SiMongodb,
 } from "react-icons/si";
+
 export const skills = [
   {
     name: "Next.js",

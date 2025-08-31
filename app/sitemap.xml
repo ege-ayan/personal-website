@@ -5,4 +5,16 @@
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://egeayan.dev/blogs</loc>
+    <lastmod>2025-08-31T15:02:24.021Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://egeayan.dev/blogs/tactical-vs-strategic-programming</loc>
+    <lastmod>2025-08-31T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

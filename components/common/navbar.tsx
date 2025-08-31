@@ -4,16 +4,22 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Squash as Hamburger } from "hamburger-react";
-import { FiHome } from "react-icons/fi";
+import { FiBookOpen, FiHome } from "react-icons/fi";
 
-const navItems = [{ name: "Home", href: "/", icon: FiHome }];
+const navItems = [
+  { name: "Home", href: "/", icon: FiHome },
+  { name: "Blogs", href: "/blogs", icon: FiBookOpen },
+];
 
 const DesktopNavbar = ({ pathname }: { pathname: string }) => {
   return (
     <div className="ml-10 flex items-baseline space-x-8">
       {navItems.map((item) => {
         const Icon = item.icon;
-        const isActive = pathname === item.href;
+        const isActive =
+          item.name === "Blogs"
+            ? pathname.startsWith("/blogs")
+            : pathname === item.href;
 
         return (
           <Link
@@ -76,7 +82,10 @@ const MobileNavbar = ({
         >
           {navItems.map((item, index) => {
             const Icon = item.icon;
-            const isActive = pathname === item.href;
+            const isActive =
+              item.name === "Blogs"
+                ? pathname.startsWith("/blogs")
+                : pathname === item.href;
 
             return (
               <Link
