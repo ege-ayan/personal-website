@@ -53,10 +53,7 @@ export const metadata: Metadata = {
   category: "Portfolio",
 
   alternates: {
-    canonical: "https://egeayan.dev",
-    languages: {
-      "en-US": "https://egeayan.dev",
-    },
+    canonical: "./",
   },
 
   icons: {
