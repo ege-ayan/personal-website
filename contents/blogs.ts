@@ -13,7 +13,7 @@ export const blogs = [
   {
     title: 'Breaking Change: How Next.js "Revolutionized" Web Development',
     description:
-      "A love letter to Next.js - the framework that promised to make our lives easier, then kept us on our toes with constant evolution. From App Router chaos to breaking changes, here's why we still love it anyway.",
+      "Learn how Next.js has revolutionized web development with its constant evolution and breaking changes.",
     readTime: "7 min",
     publishedAt: "2025-09-01",
     href: "/blogs/nextjs-breaking-changes",

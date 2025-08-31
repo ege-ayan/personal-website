@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Breaking Change: How Next.js 'Revolutionized' Web Development",
   description:
-    "A love letter to Next.js - the framework that promised to make our lives easier, then kept us on our toes with constant evolution. From App Router chaos to breaking changes, here's why we still love it anyway.",
+    "Learn how Next.js has revolutionized web development with its constant evolution and breaking changes.",
   keywords: [
     "Next.js",
     "React",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   ],
 
   openGraph: {
-    title: "The Next.js Revolution: From Trail Guide to Full-Stack Pioneer",
+    title: "Breaking Change: How Next.js 'Revolutionized' Web Development",
     description:
-      "A love letter to Next.js - the framework that promised to make our lives easier, then kept us on our toes with constant evolution.",
+      "Learn how Next.js has revolutionized web development with its constant evolution and breaking changes.",
     url: "/blogs/nextjs-breaking-changes",
     siteName: "Ege Ayan",
     images: [
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Next.js Revolution: From Trail Guide to Full-Stack Pioneer",
+    title: "Breaking Change: How Next.js 'Revolutionized' Web Development",
     description:
-      "A love letter to Next.js - the framework that promised to make our lives easier...",
+      "Learn how Next.js has revolutionized web development with its constant evolution and breaking changes.",
     images: ["/images/blogs/nextjs-breaking-change.jpg"],
   },
 };
@@ -59,10 +59,9 @@ export default function Page() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline:
-      "The Next.js Revolution: From Trail Guide to Full-Stack Pioneer (And Why We Keep Breaking Our Apps)",
+    headline: "Breaking Change: How Next.js 'Revolutionized' Web Development",
     description:
-      "A love letter to Next.js - the framework that promised to make our lives easier, then kept us on our toes with constant evolution. From App Router chaos to breaking changes, here's why we still love it anyway.",
+      "Learn how Next.js has revolutionized web development with its constant evolution and breaking changes.",
     image: ["https://egeayan.dev/images/blogs/nextjs-breaking-change.jpg"],
     datePublished: "2024-01-15T00:00:00.000Z",
     dateModified: "2024-01-15T00:00:00.000Z",
