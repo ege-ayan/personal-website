@@ -120,11 +120,10 @@ export default function Page() {
           <Image
             src="/images/blogs/we-cant-fall-behind.png"
             alt="We Can't Fall Behind: A motivational message for junior developers to embrace the AI era and drive innovation forward"
-            width={1500}
-            height={1000}
+            width={600}
+            height={400}
             className="rounded-lg select-none object-cover w-full h-auto"
             priority
-            quality={100}
           />
         </figure>
 

@@ -131,11 +131,10 @@ export default function Page() {
           <Image
             src="/images/blogs/tactical-vs-strategic-programming.jpg"
             alt="Tactical vs Strategic Programming: A visual representation of balancing quick development (tactical) with long-term architecture (strategic) in software development"
-            width={1500}
-            height={1000}
+            width={600}
+            height={400}
             className="rounded-lg select-none object-cover w-full h-auto"
             priority
-            quality={100}
           />
         </figure>
 

@@ -121,11 +121,10 @@ export default function Page() {
           <Image
             src="/images/blogs/nextjs-breaking-change.jpg"
             alt="Next.js evolution from pioneering framework to industry standard with breaking changes"
-            width={1500}
-            height={1000}
+            width={600}
+            height={400}
             className="rounded-lg select-none object-cover w-full h-auto"
             priority
-            quality={100}
           />
         </figure>
 
