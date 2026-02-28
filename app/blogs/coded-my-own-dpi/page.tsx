@@ -212,7 +212,7 @@ export default function Page() {
 
         <section className="w-full max-w-5xl space-y-6">
           <h2 className="text-2xl font-bold">
-            Key Concepts (Explain like I'm a Retard)
+            Key Concepts (Explain like I'm a Dumbass)
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             Here is a very stupid, highly simplified explanation of what's
