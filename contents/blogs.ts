@@ -1,5 +1,15 @@
 export const blogs = [
   {
+    title: "I Coded My Own Raspberry Pi DPI Proxy: Here's What I have learned.",
+    description:
+      "When Discord access was blocked in Turkey and VPS hosting our music bot failed, I didn't wait for a solution. I built my own SOCKS5 DPI bypass for Raspberry Pi.",
+    readTime: "8 min",
+    publishedAt: "2026-02-28",
+    href: "/blogs/coded-my-own-dpi",
+    tags: ["DPI", "Networking", "Raspberry Pi", "Coding"],
+    image: "/images/blogs/raspberry-dpi.png",
+  },
+  {
     title: "We Can't Fall Behind: A Call to Action for Junior Developers",
     description:
       "A motivational message for junior developers on New Year's Eve 2025—embrace confusion, work with AI, and take responsibility for driving innovation forward.",
