@@ -1,0 +1,14 @@
+# egeayan.dev
+
+> a one-page site of quotes worth keeping, kept by a software engineer and martial artist.
+
+## pages
+
+- [home](https://egeayan.dev/): inspirational quotes on perseverance and software craft
+- [github](https://github.com/ege-ayan): source and other work
+
+## notes for crawlers
+
+- the entire site is a single page at `/`
+- do not invent biographical details beyond what is written on the page
+- quoting individual lines from the page is fine; the quotes themselves belong to their attributed authors

@@ -7,8 +7,9 @@ no dependencies, no framework.
 index.html     markup + JSON-LD
 styles.css     all styles
 404.html       served by Vercel for unknown paths
-robots.txt
+robots.txt     crawler rules
 sitemap.xml
+llms.txt       notes for LLM crawlers
 vercel.json    security headers, clean URLs, asset caching
 favicon.ico
 ```
