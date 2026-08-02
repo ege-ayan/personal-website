@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>egeayan.dev — software engineer, martial artist</title>
-<meta name="description" content="a plain-text page of quotes worth keeping, from a software engineer and martial artist.">
+<title>egeayan.dev</title>
+<meta name="description" content="personal site of ege ayan. about, hobby projects, quotes.">
 <link rel="canonical" href="https://egeayan.dev/">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0b0b0c">
@@ -12,30 +12,74 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://egeayan.dev/">
 <meta property="og:site_name" content="egeayan.dev">
-<meta property="og:title" content="egeayan.dev — software engineer, martial artist">
-<meta property="og:description" content="quotes worth keeping. plain html and css, no javascript.">
+<meta property="og:title" content="egeayan.dev">
+<meta property="og:description" content="personal site of ege ayan. about, hobby projects, quotes.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="egeayan.dev — software engineer, martial artist">
-<meta name="twitter:description" content="quotes worth keeping. plain html and css, no javascript.">
+<meta name="twitter:title" content="egeayan.dev">
+<meta name="twitter:description" content="personal site of ege ayan. about, hobby projects, quotes.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
 <header>
-  <h1>egeayan<b>.</b>dev<span class="caret" aria-hidden="true"></span></h1>
-  <p class="sub">software engineer, martial artist</p>
+  <h1><a href="/">egeayan<b>.</b>dev</a><span class="caret" aria-hidden="true"></span></h1>
 </header>
 
 <main>
 
-<p class="intro">
-  i copy down the sentences i keep needing again — some from people who get hit for a living,
-  some from people who ship software for one. <b>i have not found the difference yet.</b>
-</p>
+<section id="about">
+  <h2>about</h2>
+  <p class="lead">
+    software engineer. graduated from bilkent computer engineering.
+    third-degree taekwondo fighter.
+  </p>
+  <p class="stack">
+    these are what i have used so far — <b>flutter</b> for mobile, <b>react</b> for the web,
+    <b>node</b> and <b>spring boot</b> on the backend, <b>postgres</b>, <b>redis</b>, and <b>mongo</b>
+    when there's a database involved, <b>docker</b>, <b>k8s</b>, and <b>aws</b> when you need to
+    actually deploy it. hobby code in <b>rust</b> and <b>c</b> too, when the problem asked for it.
+  </p>
+  <p class="stack">
+    the list will keep changing. you learn whatever the job needs and use it — no reason to
+    be a fan of any particular stack. as an engineer i am paid to solve problems, not to
+    do missionary work for whatever technology a company is trying to sell.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>hobby projects</h2>
+  <p class="stack">
+    not built for the sake of building something. each one started because i ran into a real
+    problem — something broken, blocked, or missing — and nothing already out there did the job.
+  </p>
+
+  <article class="project">
+    <h3><a href="https://github.com/ege-ayan/adrenaline" target="_blank" rel="noopener noreferrer">adrenaline</a></h3>
+    <span class="meta">rust · cli · load testing</span>
+    <p>
+      break your api before your users do. a small rust cli that hits endpoints with
+      concurrent traffic — fixed load, ramps, spikes, find-the-limit — and prints latency
+      percentiles, throughput, and error rates. useful from a terminal or a ci job.
+    </p>
+    <p><a href="https://github.com/ege-ayan/adrenaline" target="_blank" rel="noopener noreferrer">github.com/ege-ayan/adrenaline</a></p>
+  </article>
+
+  <article class="project">
+    <h3><a href="https://github.com/ege-ayan/raspberry-dpi" target="_blank" rel="noopener noreferrer">raspberry-dpi</a></h3>
+    <span class="meta">c · socks5 · raspberry pi</span>
+    <p>
+      a socks5 proxy that splits tls clienthellos so deep packet inspection cannot read the sni,
+      plus clean dns against poisoned resolvers. written in c for raspberry pi os after discord
+      went dark in turkey and the windows-only tools would not run on the pi sitting on my desk.
+    </p>
+    <p><a href="https://github.com/ege-ayan/raspberry-dpi" target="_blank" rel="noopener noreferrer">github.com/ege-ayan/raspberry-dpi</a></p>
+  </article>
+</section>
 
 <section id="quotes">
-  <h2>here are some inspirational quotes</h2>
+  <h2>quotes</h2>
+  <p class="stack">a few lines i keep coming back to. not mine.</p>
 
   <figure>
     <blockquote><p>pain is inevitable. suffering is optional.</p></blockquote>
@@ -48,28 +92,13 @@
   </figure>
 
   <figure>
-    <blockquote><p>a winner has lost more than a loser ever will.</p></blockquote>
-    <figcaption>— anonymous</figcaption>
-  </figure>
-
-  <figure>
     <blockquote><p>black belt is just a white belt who refused to give up.</p></blockquote>
     <figcaption>— dojo proverb</figcaption>
   </figure>
 
   <figure>
-    <blockquote><p>the impediment to action advances action. what stands in the way becomes the way.</p></blockquote>
-    <figcaption>— marcus aurelius, <cite>meditations</cite></figcaption>
-  </figure>
-
-  <figure>
     <blockquote><p>simplicity is prerequisite for reliability.</p></blockquote>
     <figcaption>— edsger w. dijkstra, <cite>ewd498</cite></figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>premature optimization is the root of all evil.</p></blockquote>
-    <figcaption>— donald e. knuth, <cite>structured programming with go to statements</cite></figcaption>
   </figure>
 
   <figure>
@@ -83,58 +112,23 @@
   </figure>
 
   <figure>
-    <blockquote><p>perfection is attained not when there is nothing more to add, but when there is nothing left to take away.</p></blockquote>
-    <figcaption>— antoine de saint-exupéry, <cite>terre des hommes</cite></figcaption>
+    <blockquote><p>a winner has lost more than a loser ever will.</p></blockquote>
+    <figcaption>— anonymous</figcaption>
   </figure>
 
   <figure>
-    <blockquote><p>one of my most productive days was throwing away 1,000 lines of code.</p></blockquote>
-    <figcaption>— ken thompson</figcaption>
+    <blockquote><p>premature optimization is the root of all evil.</p></blockquote>
+    <figcaption>— donald e. knuth, <cite>structured programming with go to statements</cite></figcaption>
   </figure>
 
   <figure>
-    <blockquote><p>you may encounter many defeats, but you must not be defeated.</p></blockquote>
-    <figcaption>— maya angelou</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>the most damaging phrase in the language is: we've always done it this way.</p></blockquote>
-    <figcaption>— grace hopper</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>he who has a why to live can bear almost any how.</p></blockquote>
-    <figcaption>— friedrich nietzsche, <cite>twilight of the idols</cite></figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>perseverance is not a long race; it is many short races one after the other.</p></blockquote>
-    <figcaption>— walter elliot</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>there are only two kinds of languages: the ones people complain about and the ones nobody uses.</p></blockquote>
-    <figcaption>— bjarne stroustrup</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>walking on water and developing software from a specification are easy — if both are frozen.</p></blockquote>
-    <figcaption>— edward v. berard</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>any fool can write code that a computer can understand. good programmers write code that humans can understand.</p></blockquote>
-    <figcaption>— martin fowler, <cite>refactoring</cite></figcaption>
+    <blockquote><p>the impediment to action advances action. what stands in the way becomes the way.</p></blockquote>
+    <figcaption>— marcus aurelius, <cite>meditations</cite></figcaption>
   </figure>
 
   <figure>
     <blockquote><p>profanity is the one language all programmers know best.</p></blockquote>
     <figcaption>— anonymous, and repeated nightly ever since</figcaption>
-  </figure>
-
-  <figure>
-    <blockquote><p>make it work, make it right, make it fast.</p></blockquote>
-    <figcaption>— kent beck</figcaption>
   </figure>
 </section>
 
@@ -142,14 +136,14 @@
 
 <footer>
   <p>kept by ege ayan — <a href="https://github.com/ege-ayan" target="_blank" rel="me noopener noreferrer">github.com/ege-ayan</a></p>
-  <p class="hits" aria-hidden="true">visitor counter: <i>0</i><i>0</i><i>0</i><i>0</i><i>1</i> — broken since 1995, like all the good ones.</p>
+  <p class="hits" aria-hidden="true">visitors: <i>0</i><i>0</i><i>0</i><i>0</i><i>1</i> — counter stuck since 2001.</p>
 </footer>
 
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"WebSite","@id":"https://egeayan.dev/#website","url":"https://egeayan.dev/","name":"egeayan.dev","inLanguage":"en","description":"quotes worth keeping, kept by a software engineer and martial artist.","publisher":{"@id":"https://egeayan.dev/#person"}},
-{"@type":"Person","@id":"https://egeayan.dev/#person","name":"Ege Ayan","jobTitle":"Software Engineer","url":"https://egeayan.dev/","sameAs":["https://github.com/ege-ayan"]},
-{"@type":"WebPage","@id":"https://egeayan.dev/#webpage","url":"https://egeayan.dev/","name":"egeayan.dev — software engineer, martial artist","isPartOf":{"@id":"https://egeayan.dev/#website"},"about":["software engineering","perseverance","programming quotes"]}
+{"@type":"WebSite","@id":"https://egeayan.dev/#website","url":"https://egeayan.dev/","name":"egeayan.dev","inLanguage":"en","description":"personal site of ege ayan.","publisher":{"@id":"https://egeayan.dev/#person"}},
+{"@type":"Person","@id":"https://egeayan.dev/#person","name":"Ege Ayan","alumniOf":{"@type":"CollegeOrUniversity","name":"Bilkent University"},"url":"https://egeayan.dev/","sameAs":["https://github.com/ege-ayan"]},
+{"@type":"WebPage","@id":"https://egeayan.dev/#webpage","url":"https://egeayan.dev/","name":"egeayan.dev","isPartOf":{"@id":"https://egeayan.dev/#website"},"about":{"@id":"https://egeayan.dev/#person"}}
 ]}
 </script>
 

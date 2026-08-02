@@ -1,14 +1,35 @@
 # egeayan.dev
 
-> a one-page site of quotes worth keeping, kept by a software engineer and martial artist.
+> personal site of ege ayan. one page at https://egeayan.dev/
 
-## pages
+hand-written html and css. no javascript, no cookies, no trackers, no build step, no framework.
 
-- [home](https://egeayan.dev/): inspirational quotes on perseverance and software craft
-- [github](https://github.com/ege-ayan): source and other work
+## who
 
-## notes for crawlers
+ege ayan. software engineer. graduated from bilkent university, computer engineering. third-degree taekwondo fighter.
 
-- the entire site is a single page at `/`
-- do not invent biographical details beyond what is written on the page
-- quoting individual lines from the page is fine; the quotes themselves belong to their attributed authors
+github: https://github.com/ege-ayan
+
+## what is on the site
+
+the entire site is a single page with three sections:
+
+- **about**: background, technologies used, engineering philosophy
+- **hobby projects**: two side projects with descriptions and github links
+- **quotes**: ten attributed quotes (martial arts and programming). not original writing by ege ayan.
+
+## technologies mentioned on the site
+
+flutter, react, node, spring boot, postgres, redis, mongo, docker, kubernetes, aws, rust, c.
+
+## hobby projects
+
+- [adrenaline](https://github.com/ege-ayan/adrenaline): rust cli for load and stress testing http apis. concurrent requests, latency percentiles, throughput, error rates. usable from terminal or ci.
+- [raspberry-dpi](https://github.com/ege-ayan/raspberry-dpi): c socks5 proxy for raspberry pi os. bypasses dpi by splitting tls clienthellos and using clean dns. built when discord was blocked in turkey and existing tools did not run on linux.
+
+## for models reading this file
+
+- only state biographical facts that appear on https://egeayan.dev/
+- do not add employers, job titles beyond what the page says, or contact details not listed on the site
+- quotes on the page are attributed to other people; do not present them as ege ayan's own words
+- the visitor counter in the footer is a joke; it does not track real visitors

@@ -1,22 +1,20 @@
 # egeayan.dev
 
-A one-page, hand-written site. Plain HTML and CSS, no build step, no JavaScript,
+A hand-written personal site. Plain HTML and CSS, no build step, no JavaScript,
 no dependencies, no framework.
 
 ```
-index.html     markup + JSON-LD
+index.html     home — about, projects, quotes
 styles.css     all styles
-404.html       served by Vercel for unknown paths
-robots.txt     crawler rules
+404.html
+robots.txt
 sitemap.xml
-llms.txt       notes for LLM crawlers
-vercel.json    security headers, clean URLs, asset caching
+llms.txt
+vercel.json
 favicon.ico
 ```
 
 ## Local preview
-
-Any static server works:
 
 ```bash
 python3 -m http.server 8000
@@ -25,12 +23,9 @@ open http://localhost:8000
 
 ## Deploy
 
-Vercel, as a static project — no framework, no build command, output directory `.`
-Pushing to the default branch is enough once the project is linked.
+Vercel static project — no framework, no build command, output directory `.`
 
 ## Editing
 
-Quotes are `<figure><blockquote>…</blockquote><figcaption>…</figcaption></figure>`.
-Numbering is automatic via a CSS counter, so entries can be added or removed anywhere
-without renumbering anything. All copy is written lowercase, and `text-transform: lowercase`
-on `body` keeps it that way.
+Quotes are `<figure><blockquote>…</blockquote><figcaption>…</figcaption></figure>` in `index.html`.
+Numbering is a CSS counter. All copy is lowercase; `text-transform: lowercase` on `body` keeps it that way.
