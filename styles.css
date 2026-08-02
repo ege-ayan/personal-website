@@ -59,6 +59,7 @@ h2 a:hover{border-bottom:1px solid var(--accent)}
 .project p{margin:0;color:var(--dim);max-width:68ch;text-wrap:pretty}
 .project p+p{margin-top:.55rem}
 
+#quotes{counter-reset:n -1}
 figure{
   counter-increment:n;
   display:grid;grid-template-columns:5ch 1fr;

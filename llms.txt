@@ -16,7 +16,7 @@ the entire site is a single page with three sections:
 
 - **about**: background, technologies used, engineering philosophy
 - **hobby projects**: two side projects with descriptions and github links
-- **quotes**: ten attributed quotes (martial arts and programming). not original writing by ege ayan.
+- **quotes**: eleven attributed quotes (martial arts, programming, and history). not original writing by ege ayan.
 
 ## technologies mentioned on the site
 
